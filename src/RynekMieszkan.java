@@ -1,19 +1,7 @@
 public class RynekMieszkan {
     public static void main(String[] args) {
-        Mieszkanie mieszkanie1 = new Mieszkanie();
-        Mieszkanie mieszkanie2 = new Mieszkanie();
-
-        mieszkanie1.nazwaDewelopera = "Archicom";
-        mieszkanie1.nazwaUlicy = "Piekna";
-        mieszkanie1.czyGaraz = true;
-        mieszkanie1.iloscPokoi = 5;
-        mieszkanie1.metraz = 80;
-
-        mieszkanie2.nazwaDewelopera = "BudMed";
-        mieszkanie2.nazwaUlicy = "Zlota";
-        mieszkanie2.czyGaraz = false;
-        mieszkanie2.iloscPokoi = 3;
-        mieszkanie2.metraz = 55.5;
+        Mieszkanie mieszkanie1 = new Mieszkanie("Archicom","Piekna",5,80,true);
+        Mieszkanie mieszkanie2 = new Mieszkanie("BudMed","Zlota",3,50.5,false);
 
         System.out.println(mieszkanie1.nazwaDewelopera);
         System.out.println(mieszkanie1.nazwaUlicy);
@@ -22,7 +10,7 @@ public class RynekMieszkan {
         System.out.println(mieszkanie1.metraz);
 
         System.out.println("");
-        
+
         System.out.println(mieszkanie2.nazwaDewelopera);
         System.out.println(mieszkanie2.nazwaUlicy);
         System.out.println(mieszkanie2.czyGaraz);
